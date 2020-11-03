@@ -33,14 +33,10 @@ RemoveIPC=true
 RestrictSUIDSGID=true
 
 AmbientCapabilities=CAP_NET_RAW
-{% if blackbox_exporter_systemd_version | int >= 232 %}
 ProtectControlGroups=true
 ProtectKernelModules=true
 ProtectKernelTunables=yes
 ProtectSystem=strict
-{% else %}
-ProtectSystem=full
-{% endif %}
 
 [Install]
 WantedBy=multi-user.target

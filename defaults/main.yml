@@ -14,6 +14,10 @@ blackbox_exporter_configuration_modules:
     http:
       method: GET
       valid_status_codes: []
+  icmp:
+    prober: icmp
+    icmp:
+      preferred_ip_protocol: ip4
 #  http_post_2xx:
 #    prober: http
 #    timeout: 5s

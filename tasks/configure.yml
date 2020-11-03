@@ -2,7 +2,7 @@
 - name: create systemd service unit
   template:
     src: blackbox_exporter.service.j2
-    dest: /etc/systemd/system/blackbox_exporter.service
+    dest: /lib/systemd/system/blackbox_exporter.service
     owner: root
     group: root
     mode: 0644
